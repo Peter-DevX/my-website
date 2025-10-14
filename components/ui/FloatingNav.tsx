@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-import React, { useState } from "react";
+import React, { JSX, useEffect, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -7,6 +8,7 @@ import {
   useMotionValueEvent,
 } from "motion/react";
 import { cn } from "../lib/utils";
+import Link from "next/link";
 
 export const FloatingNav = ({
   navItems,
@@ -26,7 +28,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
@@ -39,6 +41,10 @@ export const FloatingNav = ({
       }
     }
   });
+
+  const [hydrated, setHydrated] = useState(false);
+  useEffect(() => setHydrated(true), []);
+  if (!hydrated) return null;
 
   return (
     <AnimatePresence mode="wait">
@@ -72,7 +78,7 @@ export const FloatingNav = ({
           </a>
         ))}
         <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
+          <Link href="/portfolio">Portfolio</Link>
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button>
       </motion.div>
