@@ -5,7 +5,7 @@ import FloatingNavWrapper from "@/components/FloatingNavWrapper";
 import Footer from "@/components/Footer";
 import { useState, FormEvent } from "react";
 
-interface FormData {
+export type FormData = {
   name: string;
   email: string;
   subject: string;
