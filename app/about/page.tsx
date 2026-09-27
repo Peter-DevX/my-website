@@ -3,6 +3,7 @@
 import React from "react";
 import { motion, useScroll, useTransform } from "motion/react";
 import Image from "next/image";
+import FloatingNavWrapper from "@/components/FloatingNavWrapper";
 import Footer from "@/components/Footer";
 
 export default function AboutPage() {
@@ -12,6 +13,7 @@ export default function AboutPage() {
 
   return (
     <main className="min-h-screen w-full relative overflow-hidden">
+      <FloatingNavWrapper />
       {/* Background */}
       <div className="fixed inset-0 bg-[#0a0a1f] -z-10" />
 
@@ -56,12 +58,12 @@ export default function AboutPage() {
               <div className="relative group">
                 {/* Image container */}
                 <div className="relative aspect-square max-w-md mx-auto overflow-hidden rounded-full">
-                  <div className="w-full h-full bg-gradient-to-br backdrop-blur-xl border rounded-lg">
+                  <div className="w-full h-full bg-gradient-to-br backdrop-blur-xl border rounded-full">
                     <Image
-                      src="/dev_image.jpg"
+                      src="/personal-photo.png"
                       alt="Peter Asiedu-Gyan"
                       fill
-                      className="object-cover rounded-md size-10"
+                      className="object-cover rounded-full size-5"
                       priority
                     />
                   </div>

@@ -22,7 +22,7 @@ export const gridItems = [
   {
     id: 3,
     title: "My tech stack",
-    description: "I constantly try to improve",
+    description: "I constantly work to improve",
     className: "lg:col-span-3 md:col-span-3 row-span-1",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -58,18 +58,19 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/b5.svg",
-    spareImg: "/b6.svg",
+    // spareImg: "/b6.svg",
   },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "Moudlyne Global Ltd",
-    des: "A modern website, designed for Moudlyne Global Ltd using React.js.",
-    img: "/Moudlyne_about.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "https://moudlynegloballtd.com/services",
+    title: "Lenzy",
+    des: "A gaming website inspired by Zentry",
+    img: "/lenzy.png",
+    // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
+    link: "https://github.com/Peter-DevX/Award-winning-website",
   },
   {
     id: 2,
@@ -79,16 +80,9 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://github.com/Peter-DevX/Netflix_Clone",
   },
+  
   {
     id: 3,
-    title: "Assibey Royals Enterprisee",
-    des: "A car dealership website designed with a clean layout and excellent UI/UX",
-    img: "/p2.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://asibeyroyalenterprise.com/",
-  },
-  {
-    id: 4,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
@@ -96,12 +90,20 @@ export const projects = [
     link: "https://github.com/Peter-DevX/iphone_website",
   },
   {
-    id: 5,
+    id: 4,
     title: "Facebook Clone",
     des: "A frontend project using html and css with high profeciency",
     img: "/DevX_socialbook.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://github.com/Peter-DevX/DevX-Socialbook",
+  },
+  {
+    id: 5,
+    title: "Assibey Royals Enterprisee",
+    des: "A car dealership website designed with a clean layout and excellent UI/UX",
+    img: "/p2.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+    link: "https://asibeyroyalenterprise.com/",
   },
   {
     id: 6,

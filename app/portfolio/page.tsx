@@ -232,7 +232,7 @@ export default function PortfolioPage() {
         </motion.div>
 
         {/* Scroll indicator */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
@@ -249,7 +249,7 @@ export default function PortfolioPage() {
               className="w-1.5 h-3 bg-gradient-to-b from-blue-400 to-purple-400 rounded-full"
             />
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </section>
 
       {/* Projects Section */}
