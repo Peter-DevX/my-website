@@ -67,7 +67,7 @@ export const projects = [
     id: 1,
     title: "Lenzy",
     des: "A gaming website inspired by Zentry",
-    img: "/lenzy.png",
+    img: "/Lenzy.png",
     // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
     link: "https://award-winning-website.peterasiedugyan0.workers.dev",
