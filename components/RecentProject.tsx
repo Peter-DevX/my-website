@@ -65,13 +65,13 @@ import { projects } from "../data/index";
 const RecentProject = () => {
   return (
     <div className="py-12 md:py-20 px-4">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 leading-tight">
+      <h1 data-scroll-reveal className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-4 leading-tight">
         A small selection of{" "}
         <span className="text-purple-400">recent projects</span>
       </h1>
 
       {/* Grid layout instead of flex-wrap for better control */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-10 max-w-7xl mx-auto">
+      <div className="js-scroll-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-10 max-w-7xl mx-auto">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}

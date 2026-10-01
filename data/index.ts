@@ -11,7 +11,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I'm flexible with time zone communications",
     description: "",
     className: "lg:col-span-3 md:col-span-3 row-span-1",
     imgClassName: "",
@@ -66,7 +66,7 @@ export const projects = [
   {
     id: 1,
     title: "Lenzy",
-    des: "A gaming website inspired by Zentry",
+    des: "Lentry connects player achievements with AI tools to build a player-powered gaming economy.",
     img: "/Lenzy.png",
     // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
@@ -75,15 +75,15 @@ export const projects = [
   {
     id: 2,
     title: "Army Creative Studios",
-    des: "A clone of netflix app using firebase and React.js to bring a clean responsive design",
+    des: "A creative community delivering fashion, design, tech, and media projects for the next generation.",
     img: "/army-creative.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://armycreativestudios.com",
-  },
+  }, 
   {
     id: 3,
     title: "Lorri Luxe",
-    des: "A frontend project using html and css with high profeciency",
+    des: "A high-performance e-commerce store delivering premium human hair extensions and custom wigs globally.",
     img: "lorri.png",
     iconLists: [ "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://lorriluxe.com",
@@ -91,15 +91,24 @@ export const projects = [
   
   {
     id: 4,
-    title: "Assibey Royals Enterprisee",
-    des: "A car dealership website designed with a clean layout and excellent UI/UX",
-    img: "/devx.png",
+    title: "DevX Solutions",
+    des: "A multidisciplinary studio that builds, visualizes, and grows brilliant brands under one roof.",
+    img: "/DevXx.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://devxsolutions.org",
+    link: "https://devxsolutions.org/services/virtual-tours",
   },
 
   {
-    id: 4,
+    id: 5,
+    title: "Fruitland Travels Ghana",
+    des: "A trusted Ghanaian agency delivering visa assistance, flight booking, and worldwide tour packages.",
+    img: "fruitland.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://fruitlandtravelghana.com/#countries",
+  },
+
+  {
+    id: 6,
     title: "Animated Apple Iphone 3D Website",
     des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
     img: "/p4.svg",
@@ -108,12 +117,12 @@ export const projects = [
   },
   
   
-  {
-    id: 6,
-    title: "Custom Website for Restaurant",
-    des: "Designed a stunning website for Waakye Wifi maintaining a clean UI and the best user experience",
-    img: "/waakye_wifi.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://github.com/Peter-DevX/DevX-Socialbook",
-  },
+  // {
+  //   id: 6,
+  //   title: "Custom Website for Restaurant",
+  //   des: "Designed a stunning website for Waakye Wifi maintaining a clean UI and the best user experience",
+  //   img: "/waakye_wifi.png",
+  //   iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+  //   link: "https://github.com/Peter-DevX/DevX-Socialbook",
+  // },
 ];

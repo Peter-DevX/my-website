@@ -116,7 +116,7 @@ export default function ContactForm() {
 
       <div className="relative max-w-4xl mx-auto">
         {/* Section header */}
-        <div className="text-center mb-12">
+        <div data-scroll-reveal className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Let&apos;s Work Together
           </h2>
@@ -128,7 +128,7 @@ export default function ContactForm() {
         {/* Contact form */}
         <div className="relative">
           {/* Card with glassmorphism effect */}
-          <div className="relative backdrop-blur-xl bg-white/5 rounded-2xl border border-white/10 p-8 md:p-12 shadow-2xl">
+          <div data-scroll-reveal className="relative backdrop-blur-xl bg-white/5 rounded-2xl border border-white/10 p-8 md:p-12 shadow-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               {/* Name and Email row */}
               <div className="grid md:grid-cols-2 gap-6">

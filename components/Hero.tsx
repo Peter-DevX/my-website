@@ -8,7 +8,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 pt-36" data-hero-section>
       <div className="pointer-events-none fixed inset-0 z-30 flex items-center justify-center">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -30,7 +30,10 @@ const Hero = () => {
       </div>
 
       {/* GRID */}
-      <div className="absolute top-0 left-0 flex h-screen w-full items-center justify-center bg-transparent dark:bg-[#000319]">
+      <div
+        className="absolute top-0 left-0 flex h-screen w-full items-center justify-center bg-transparent dark:bg-[#000319]"
+        data-hero-parallax
+      >
         <div
           //  className={cn(
           //    "absolute inset-0",
@@ -53,26 +56,33 @@ const Hero = () => {
       </div>
 
       <div className="flex justify-center relative my-20 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+        <div
+          className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center"
+          data-scroll-hero
+        >
+            <h2 data-hero-item className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Welcome to Creativity and Innovation
           </h2>
-          <TextGenerateEffect
-            className="text-center text-[1.2rem] md:text-5xl sm:text-6xl"
-            duration={0.9}
-            filter={false}
-            words={"Transforming Concepts into Seamless User Experiences"}
-          />
-          <p className="text-center md:tracking-wider text-sm mb-4 ">
+            <div data-hero-item>
+              <TextGenerateEffect
+                className="text-center text-[1.2rem] md:text-5xl sm:text-6xl"
+                duration={0.9}
+                filter={false}
+                words={"Transforming Concepts into Seamless User Experiences"}
+              />
+            </div>
+            <p data-hero-item className="text-center md:tracking-wider text-sm mb-4 ">
             Hi I&apos;m Peter, a Web Developer based in Ghana
           </p>
-          <a href="#about">
-            <MagicButton
-              title="Explore"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
+            <div data-hero-item>
+              <a href="#about">
+                <MagicButton
+                  title="Explore"
+                  icon={<FaLocationArrow />}
+                  position="right"
+                />
+              </a>
+            </div>
         </div>
       </div>
     </div>

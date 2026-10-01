@@ -212,13 +212,13 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 ">
             <p className="text-gray-400 text-sm flex items-center gap-2">
               Made with
-              <motion.span
+              {/* <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity, repeatDelay: 1 }}
                 className="text-pink-500"
               >
                 ❤️
-              </motion.span>
+              </motion.span> */}
               by Peter Asiedu-Gyan
             </p>
 
