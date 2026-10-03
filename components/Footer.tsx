@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
+import { Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -29,6 +30,11 @@ const Footer = () => {
           />
         </svg>
       ),
+    },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/devx_solutions",
+      icon: <Instagram className="w-5 h-5" />,
     },
     {
       name: "Email",

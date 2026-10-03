@@ -66,7 +66,7 @@ export const projects = [
   {
     id: 1,
     title: "Lenzy",
-    des: "Lentry connects player achievements with AI tools to build a player-powered gaming economy.",
+    des: "Lenzy connects player achievements with AI tools to build a player-powered gaming economy.",
     img: "/Lenzy.png",
     // iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg"],
